@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_header_comment_default"
+      />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_marginLeft="12dp"
+        android:text="12348787994"
+        android:textSize="14sp"
+        android:textColor="#C3C2BD"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="#999896"
+        android:text="一些评论一些评论一些评论一些评论一些评论一些评论一些评论一些评论"/>
+    <TextView
+        android:id="@+id/tv_buytime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="5dp"
+        android:textSize="11sp"
+        android:textColor="#656563"
+        android:visibility="gone"
+        android:text="购买日期"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-01-26"
+        android:textSize="14sp"
+        android:textColor="#999896"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_name"/>
+
+
+</RelativeLayout>

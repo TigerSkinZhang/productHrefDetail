@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flowlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:paddingTop="15dp"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_all"
+        style="@style/comment_btn_style"
+        android:text="全部（3000）" />
+
+    <TextView
+        android:id="@+id/tv_good"
+        style="@style/comment_btn_style"
+        android:text="好评（100）" />
+
+   <!-- <TextView
+        android:id="@+id/tv_has_pic"
+        style="@style/comment_btn_style"
+        android:text="有图" />
+-->
+    <TextView
+        android:id="@+id/tv_middle"
+        style="@style/comment_btn_style"
+        android:text="中评" />
+
+    <TextView
+        android:id="@+id/tv_bad"
+        style="@style/comment_btn_style"
+        android:text="差评" />
+</LinearLayout>
