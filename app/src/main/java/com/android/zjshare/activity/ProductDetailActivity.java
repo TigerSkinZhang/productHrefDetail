@@ -274,13 +274,8 @@ public class ProductDetailActivity extends Activity {
 
         setDataForView(GsonUtils.parseFromString(proJson, ProductDetailBean.class));
 
-        String desc = "{\n" +
-                "\t\t\"id\": 8036,\n" +
-                "\t\t\"goodsId\": 9035,\n" +
-                "\t\t\"goodsPcDesc\": \"<p><span style=\\\"background-color: rgb(23, 21, 24); color: rgb(153, 152, 150);\\\"><img src=\\\"http://image.greenchoicechina.com/2020/03/17/8bfc893a-c007-40f6-baf8-8695cda88c83.jpg\\\"></span><img src=\\\"https://image.greenchoicechina.com//2020/11/23/9999599a-7fe6-4919-821b-8a66f5ee997d.jpg\\\"><img src=\\\"https://image.greenchoicechina.com//2020/11/23/bdf417ee-0457-4db8-a345-a40b23d7b12c.jpg\\\"><img src=\\\"https://image.greenchoicechina.com//2020/11/23/7adc51f1-63e9-4d58-a5b1-74fc9fa3f76e.jpg\\\"><img src=\\\"https://image.greenchoicechina.com//2020/11/23/2173871e-78d3-42f6-8046-a1832a24325a.jpg\\\"><img src=\\\"https://image.greenchoicechina.com//2020/11/23/66096085-ddca-4c2e-9b8a-0e64702339fe.jpg\\\"><span style=\\\"background-color: rgb(23, 21, 24); color: rgb(153, 152, 150);\\\"><img src=\\\"http://image.greenchoicechina.com/2020/03/17/2eae158f-ad10-435f-aa05-a904825a2a3d.jpg\\\"></span></p>\"\n" +
-                "\t}";
 
-        setDetailDesc(GsonUtils.parseFromString(desc, ProductDescData.class));
+        setDetailDesc( );
 
     }
 
@@ -305,9 +300,9 @@ public class ProductDetailActivity extends Activity {
 
     ProductIntroduceView introduceView;
 
-    public void setDetailDesc(ProductDescData bean) {
+    public void setDetailDesc( ) {
         introduceView = new ProductIntroduceView(ProductDetailActivity.this);
-        introduceView.requestContent(bean.getGoodsPcDesc());
+        introduceView.requestContent( );
         mBinding.container.addView(introduceView);
         anchorList.add(introduceView);
         CommentView commentView = new CommentView(ProductDetailActivity.this);

@@ -88,7 +88,7 @@ public class ProductIntroduceView extends RelativeLayout {
             e.printStackTrace();
         }
     }
-    public void requestContent(String bodyContent){
+    public void requestContent( ){
 
         fetchOfflineResources();
        /* if(!TextUtils.isEmpty(mUrl)){
@@ -101,25 +101,9 @@ public class ProductIntroduceView extends RelativeLayout {
                 mWebView.loadUrl(mUrl);
             }
         }*/
-        String linkCss =
-                "  <meta charset=\"utf-8\">\n" +
-                        "    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=no\">\n" +
-                        "    <meta name=\"format-detection\" content=\"telephone=no\">"+
-                "<style type=\"text/css\"> " +
-                "img {" +
-                "width:100%;" +
-                "height:auto;" +
-                "}" + "p { margin: 0;padding: 0; }"+
-                "body {" +
-                "margin-right:0px;" +
-                "margin-left:0px;" +
-                "margin-top:0px;" +
-                "margin-bottom:0px;" +
-                "}" +
-                "</style>";
-        String html = "<html><head>" + linkCss + "</head>" + bodyContent + "</body></html>";
+        String html = "http://s1.zhidianlife.com/commodityInfo/api/v1/attrs?productId=32380c9228e44dd28a2eb8a948f59380";
 //        mWebView.loadData(content, "text/html", "UTF-8"); // 加载定义的代码，并设定编码格式和字符集。
-        mWebView.loadData(html, "text/html", "uft-8");
+        mWebView.loadUrl(html);
     }
 
     private void setListener() {
